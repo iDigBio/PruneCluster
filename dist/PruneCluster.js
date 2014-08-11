@@ -1,3 +1,5 @@
+
+
 var __extends = this.__extends || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -403,7 +405,7 @@ var PruneCluster;
 (function (PruneCluster) {
 })(PruneCluster || (PruneCluster = {}));
 
-var PruneClusterForLeaflet = (L.Layer ? L.Layer : L.Class).extend({
+window.PruneClusterForLeaflet = (L.Layer ? L.Layer : L.Class).extend({
     initialize: function (size, clusterMargin) {
         var _this = this;
         if (typeof size === "undefined") { size = 120; }
@@ -746,7 +748,7 @@ var PruneClusterForLeaflet = (L.Layer ? L.Layer : L.Class).extend({
         return this.Cluster.GetMarkers();
     }
 });
-var PruneClusterLeafletSpiderfier = (L.Layer ? L.Layer : L.Class).extend({
+window.PruneClusterLeafletSpiderfier = (L.Layer ? L.Layer : L.Class).extend({
     _2PI: Math.PI * 2,
     _circleFootSeparation: 25,
     _circleStartAngle: Math.PI / 6,
